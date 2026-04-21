@@ -141,7 +141,8 @@ img {
 }
 
 .section-image-hero {
-  height: clamp(220px, 32vw, 520px);
+  display: block;
+  height: auto;
   object-fit: cover;
   object-position: top center;
 }
