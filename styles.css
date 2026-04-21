@@ -210,11 +210,24 @@ img {
   box-shadow: var(--shadow-lg);
 }
 
+.hero-frame {
+  max-width: 1120px;
+  height: clamp(260px, 38vw, 560px);
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 30px;
+  box-shadow: var(--shadow-lg);
+}
+
 .section-image-hero {
-  display: block;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
   object-fit: cover;
-  object-position: top center;
+  object-position: center 18%;
 }
 
 .hero-text-block {
@@ -338,6 +351,11 @@ img {
   }
 
   .section-image {
+    border-radius: 18px;
+  }
+
+  .hero-frame {
+    height: clamp(200px, 52vw, 320px);
     border-radius: 18px;
   }
 
