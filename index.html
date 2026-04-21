@@ -8,7 +8,7 @@
     name="description"
     content="Programa de afiliados Reproboost com IATF Boost, Andro Boost e Central Boost para fazendas, centrais e operacoes reprodutivas."
   >
-  <link rel="icon" type="image/jpeg" href="./assets/images/WhatsApp Image 2026-04-21 at 09.45.24.jpeg">
+  <link rel="icon" type="image/png" href="./assets/images/reproboost-logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -23,8 +23,13 @@
   <header class="site-header">
     <div class="container header-shell">
       <a class="brand" href="#hero">
-        <span class="brand-mark"></span>
-        <span>Reproboost</span>
+        <span class="brand-badge">
+          <img
+            class="brand-logo"
+            src="./assets/images/reproboost-logo.png"
+            alt="Programa de Afiliados Reproboost"
+          >
+        </span>
       </a>
 
       <button
@@ -53,11 +58,13 @@
   <main id="conteudo">
     <section class="image-section" id="hero">
       <div class="container">
-        <img
-          class="section-image section-image-hero"
-          src="./assets/images/WhatsApp Image 2026-04-20 at 17.29.44.jpeg"
-          alt="Banner principal Reproboost"
-        >
+        <div class="hero-frame">
+          <img
+            class="section-image section-image-hero"
+            src="./assets/images/WhatsApp Image 2026-04-20 at 17.29.44.jpeg"
+            alt="Banner principal Reproboost"
+          >
+        </div>
 
         <div class="hero-text-block">
           <p>
@@ -159,13 +166,34 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-row">
-      <div>
-        <strong>Reproboost</strong>
-        <p>Programa de afiliados com apresentacao visual organizada nas artes originais.</p>
+    <div class="container footer-card">
+      <div class="footer-brand-block">
+        <div class="footer-logo-badge">
+          <img
+            class="footer-logo"
+            src="./assets/images/reproboost-logo.png"
+            alt="Programa de Afiliados Reproboost"
+          >
+        </div>
+        <p class="footer-description">
+          Plataforma comercial para afiliados apresentarem IATF Boost, Andro Boost e
+          Central Boost com mais clareza, autoridade e conversao.
+        </p>
       </div>
 
-      <a class="button" href="#secao-3">Solicitar contato</a>
+      <div class="footer-links">
+        <strong>Navegacao</strong>
+        <a href="#hero">Inicio</a>
+        <a href="#secao-2">Produtos</a>
+        <a href="#secao-3">Cadastro</a>
+        <a href="#secao-5">Kit</a>
+      </div>
+
+      <div class="footer-cta">
+        <strong>Fale com a equipe</strong>
+        <p>Preencha o formulario e receba orientacao comercial sobre o programa.</p>
+        <a class="button" href="#secao-3">Solicitar contato</a>
+      </div>
     </div>
   </footer>
 
