@@ -138,6 +138,30 @@ img {
   box-shadow: var(--shadow-lg);
 }
 
+.section-image-hero {
+  height: clamp(260px, 38vw, 620px);
+  object-fit: cover;
+  object-position: top center;
+}
+
+.hero-text-block {
+  max-width: 1180px;
+  margin: 36px auto 0;
+  text-align: center;
+}
+
+.hero-text-block p {
+  margin: 0;
+  color: #394355;
+  font-size: clamp(1.5rem, 2.5vw, 2.35rem);
+  line-height: 1.55;
+  letter-spacing: -0.02em;
+}
+
+.hero-text-block p + p {
+  margin-top: 28px;
+}
+
 .comparison-stack {
   display: grid;
   gap: 24px;
@@ -225,5 +249,14 @@ img {
   .footer-row {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .hero-text-block {
+    margin-top: 24px;
+  }
+
+  .hero-text-block p {
+    font-size: 1.12rem;
+    line-height: 1.7;
   }
 }
