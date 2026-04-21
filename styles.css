@@ -52,7 +52,7 @@ img {
 }
 
 .container {
-  width: min(calc(100% - 40px), var(--container));
+  width: min(calc(100% - 56px), var(--container));
   margin: 0 auto;
 }
 
@@ -134,12 +134,14 @@ img {
 
 .section-image {
   width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
   border-radius: 30px;
   box-shadow: var(--shadow-lg);
 }
 
 .section-image-hero {
-  height: clamp(260px, 38vw, 620px);
+  height: clamp(220px, 32vw, 520px);
   object-fit: cover;
   object-position: top center;
 }
@@ -258,5 +260,9 @@ img {
   .hero-text-block p {
     font-size: 1.12rem;
     line-height: 1.7;
+  }
+
+  .section-image {
+    border-radius: 18px;
   }
 }
