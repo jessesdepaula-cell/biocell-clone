@@ -139,7 +139,12 @@ img {
   margin-top: 42px;
   padding-top: 34px;
   padding-bottom: 34px;
-  background: linear-gradient(180deg, #7f1824, #6b131d);
+  background: #661c1d;
+}
+
+#secao-5 .section-image {
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .cadastro-card {
@@ -425,6 +430,10 @@ img {
     margin-top: 26px;
     padding-top: 22px;
     padding-bottom: 22px;
+  }
+
+  #secao-5 .section-image {
+    border-radius: 0;
   }
 
   .hero-frame {
