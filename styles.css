@@ -135,6 +135,10 @@ img {
   background: var(--blue-950);
 }
 
+.section-white-block {
+  background: #ffffff;
+}
+
 .section-red-block {
   margin-top: 42px;
   padding-top: 34px;
@@ -149,6 +153,11 @@ img {
 #secao-5 .section-image {
   max-width: 1040px;
   width: min(100%, 1040px);
+  border-radius: 0;
+  box-shadow: none;
+}
+
+#secao-2 .section-image {
   border-radius: 0;
   box-shadow: none;
 }
