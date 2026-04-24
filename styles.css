@@ -81,19 +81,9 @@ img {
   flex-shrink: 0;
 }
 
-.brand-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 18px;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 10px 24px rgba(6, 10, 46, 0.24);
-}
-
 .brand-logo {
   width: auto;
-  height: 34px;
+  height: 58px;
 }
 
 .site-nav {
@@ -420,12 +410,8 @@ img {
     padding-top: 8px;
   }
 
-  .brand-badge {
-    padding: 8px 14px;
-  }
-
   .brand-logo {
-    height: 28px;
+    height: 44px;
   }
 
   .hero-text-block {
