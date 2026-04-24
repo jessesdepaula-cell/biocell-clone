@@ -296,20 +296,9 @@ img {
   flex-direction: column;
 }
 
-.footer-logo-badge {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  align-self: flex-start;
-  padding: 16px 22px;
-  border-radius: 28px;
-  background: rgba(255, 255, 255, 0.98);
-  box-shadow: 0 16px 34px rgba(10, 15, 90, 0.28);
-}
-
 .footer-logo {
   width: auto;
-  height: 72px;
+  height: 58px;
 }
 
 .footer-description,
@@ -465,14 +454,8 @@ img {
     border-radius: 24px;
   }
 
-  .footer-logo-badge {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 18px;
-  }
-
   .footer-logo {
-    height: 54px;
+    height: 42px;
   }
 
   .footer-cta {
