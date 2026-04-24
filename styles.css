@@ -298,7 +298,10 @@ img {
 
 .footer-logo {
   width: auto;
-  height: 58px;
+  max-width: 320px;
+  height: auto;
+  max-height: 48px;
+  object-fit: contain;
 }
 
 .footer-description,
@@ -455,7 +458,8 @@ img {
   }
 
   .footer-logo {
-    height: 42px;
+    max-width: 240px;
+    max-height: 38px;
   }
 
   .footer-cta {
