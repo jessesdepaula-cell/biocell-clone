@@ -296,6 +296,10 @@ img {
   flex-direction: column;
 }
 
+.footer-brand-block {
+  align-items: flex-start;
+}
+
 .footer-logo {
   width: auto;
   max-width: 320px;
