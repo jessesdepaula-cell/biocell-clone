@@ -129,27 +129,14 @@ img {
   background: #ffffff;
 }
 
-.section-red-block {
-  margin-top: 42px;
-  padding-top: 34px;
-  padding-bottom: 34px;
-  background: #551818;
-}
-
-#secao-5 .container {
-  width: 100%;
-}
-
-#secao-5 .section-image {
-  max-width: 1040px;
-  width: min(100%, 1040px);
+.section-image-flat {
   border-radius: 0;
   box-shadow: none;
 }
 
-#secao-2 .section-image {
-  border-radius: 0;
-  box-shadow: none;
+.banner-stack {
+  display: grid;
+  gap: 26px;
 }
 
 .cadastro-card {
@@ -266,11 +253,6 @@ img {
 
 .hero-text-block p + p {
   margin-top: 28px;
-}
-
-.comparison-stack {
-  display: grid;
-  gap: 24px;
 }
 
 .site-footer {
@@ -423,17 +405,7 @@ img {
     border-radius: 18px;
   }
 
-  .section-red-block {
-    margin-top: 26px;
-    padding-top: 22px;
-    padding-bottom: 22px;
-  }
-
-  #secao-5 .container {
-    width: 100%;
-  }
-
-  #secao-5 .section-image {
+  .section-image-flat {
     border-radius: 0;
   }
 
