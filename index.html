@@ -47,6 +47,7 @@
         <a href="#secao-2">Produtos</a>
         <a href="#secao-3">Cadastro</a>
         <a href="#secao-4">Resultados</a>
+        <a href="#secao-5">Gestor</a>
       </nav>
     </div>
   </header>
@@ -76,11 +77,21 @@
     </section>
 
     <section class="image-section section-white-block" id="secao-2">
-      <div class="container">
+      <div class="container banner-stack">
         <img
           class="section-image section-image-flat"
           src="./assets/images/banner-produtos.png"
           alt="Banners dos produtos Andro Boost e IATF Boost com chamada para cadastro"
+        >
+        <img
+          class="section-image section-image-flat"
+          src="./assets/images/banner-andro-v2.png"
+          alt="Banner de beneficios do Andro Boost"
+        >
+        <img
+          class="section-image section-image-flat"
+          src="./assets/images/banner-iatf-v2.png"
+          alt="Banner de beneficios do IATF Boost"
         >
       </div>
     </section>
@@ -93,23 +104,30 @@
               <h2>Fa&ccedil;a seu cadastro e torne-se afiliado do nosso programa!</h2>
             </div>
 
-            <form class="cadastro-form">
+            <form class="cadastro-form" id="cadastro-form">
               <label>
                 Nome
-                <input type="text" placeholder="Seu nome">
+                <input type="text" name="nome" placeholder="Seu nome" required>
               </label>
               <label>
                 Empresa / Fazenda / Central
-                <input type="text" placeholder="Nome da operacao">
+                <input type="text" name="empresa" placeholder="Nome da operacao" required>
               </label>
               <label>
                 WhatsApp
-                <input type="text" placeholder="(00) 00000-0000">
+                <input type="text" name="whatsapp" placeholder="(00) 00000-0000" required>
               </label>
-              <button class="button cadastro-button" type="button">Quero ser afiliado</button>
+              <button class="button cadastro-button" type="submit">Quero ser afiliado</button>
+              <p class="cadastro-feedback" id="cadastro-feedback" aria-live="polite"></p>
             </form>
           </div>
         </div>
+
+        <img
+          class="section-image section-image-flat section-image-spaced"
+          src="./assets/images/banner-kit-v2.png"
+          alt="Banner destacando kit exclusivo e treinamento para novos afiliados"
+        >
       </div>
     </section>
 
@@ -129,7 +147,67 @@
     </section>
 
     <section class="image-section section-white-block" id="secao-5">
-      <div class="container banner-stack">
+      <div class="container gestor-shell">
+        <div class="gestor-header">
+          <div>
+            <p class="section-kicker">Area do Gestor</p>
+            <h2>Painel de membros e cadastros</h2>
+            <p class="gestor-intro">
+              Todos os afiliados cadastrados aparecem aqui para acompanhamento,
+              organizacao de contato e gestao comercial do programa.
+            </p>
+          </div>
+          <button class="button button-secondary" id="exportar-csv" type="button">Exportar cadastros</button>
+        </div>
+
+        <div class="gestor-metrics">
+          <article class="metric-card">
+            <span>Total</span>
+            <strong id="metric-total">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Novos</span>
+            <strong id="metric-novos">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Contatados</span>
+            <strong id="metric-contatados">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Qualificados</span>
+            <strong id="metric-qualificados">0</strong>
+          </article>
+        </div>
+
+        <div class="gestor-toolbar">
+          <input id="filtro-cadastro" type="search" placeholder="Buscar por nome, fazenda ou WhatsApp">
+          <select id="filtro-status">
+            <option value="todos">Todos os status</option>
+            <option value="novo">Novo</option>
+            <option value="contatado">Contatado</option>
+            <option value="qualificado">Qualificado</option>
+            <option value="fechado">Fechado</option>
+          </select>
+        </div>
+
+        <div class="gestor-table-wrap">
+          <table class="gestor-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Empresa / Fazenda / Central</th>
+                <th>WhatsApp</th>
+                <th>Data</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="cadastros-body">
+              <tr class="empty-row">
+                <td colspan="5">Nenhum cadastro recebido ainda.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </section>
 
@@ -150,7 +228,7 @@
         <a href="#hero">Inicio</a>
         <a href="#secao-2">Produtos</a>
         <a href="#secao-3">Cadastro</a>
-        <a href="#secao-5">Revenda</a>
+        <a href="#secao-5">Gestor</a>
       </div>
 
       <div class="footer-cta">
