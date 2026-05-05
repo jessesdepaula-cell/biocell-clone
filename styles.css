@@ -321,6 +321,12 @@ img {
   background: linear-gradient(135deg, var(--blue-900), #253395);
 }
 
+.button-ghost {
+  background: #fff;
+  color: var(--blue-900);
+  border: 1px solid var(--line);
+}
+
 .gestor-metrics {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -354,6 +360,13 @@ img {
   display: grid;
   grid-template-columns: minmax(0, 1fr) 240px;
   gap: 16px;
+}
+
+.gestor-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: flex-end;
 }
 
 .gestor-toolbar input,
@@ -412,6 +425,114 @@ img {
   background: #fff;
   color: #1b2437;
   font: inherit;
+}
+
+.gestor-cta-shell {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 30px 34px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #ffffff, #f8fbff);
+  box-shadow: var(--shadow-md);
+}
+
+.gestor-cta-copy {
+  max-width: 760px;
+}
+
+.gestor-cta-copy h2 {
+  margin: 0;
+  color: #10182a;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(1.7rem, 2.6vw, 2.5rem);
+}
+
+.gestor-cta-copy p:last-child {
+  margin: 12px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.gestor-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(142, 36, 51, 0.18), transparent 24%),
+    linear-gradient(135deg, #0a0f5a, #131c6d 60%, #1c0e4e);
+}
+
+.gestor-page-main {
+  min-height: 100vh;
+  padding: 32px 24px 48px;
+}
+
+.gestor-login-wrap {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 80px);
+}
+
+.gestor-login-card {
+  width: min(100%, 560px);
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 34px;
+  background: rgba(255, 255, 255, 0.97);
+  box-shadow: 0 28px 60px rgba(5, 10, 40, 0.32);
+}
+
+.gestor-brand {
+  margin-bottom: 24px;
+}
+
+.gestor-login-card h1 {
+  margin: 0;
+  color: #10182a;
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2rem, 3vw, 3rem);
+  line-height: 1;
+}
+
+.gestor-login-text {
+  margin: 14px 0 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.gestor-login-form {
+  display: grid;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.gestor-login-form label {
+  display: grid;
+  gap: 8px;
+  color: #58657c;
+  font-weight: 700;
+}
+
+.gestor-login-form input {
+  min-height: 56px;
+  padding: 0 16px;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: #fff;
+  color: #202939;
+  font: inherit;
+}
+
+.gestor-login-feedback {
+  color: #8e2433;
+}
+
+.gestor-dashboard-page {
+  padding: 24px 0;
+}
+
+.hidden {
+  display: none !important;
 }
 
 .site-footer {
@@ -546,6 +667,15 @@ img {
   .gestor-metrics {
     display: grid;
   }
+
+  .gestor-cta-shell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .gestor-actions {
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 640px) {
@@ -603,6 +733,11 @@ img {
     font-size: 1.5rem;
   }
 
+  .gestor-cta-shell {
+    padding: 22px 18px;
+    border-radius: 22px;
+  }
+
   .footer-card {
     padding: 24px 20px;
     border-radius: 24px;
@@ -629,5 +764,14 @@ img {
 
   .footer-cta .button {
     width: 100%;
+  }
+
+  .gestor-page-main {
+    padding: 20px 14px 34px;
+  }
+
+  .gestor-login-card {
+    padding: 24px 18px;
+    border-radius: 24px;
   }
 }

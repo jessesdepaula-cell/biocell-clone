@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area do Gestor | Reproboost</title>
+  <meta
+    name="description"
+    content="Acesso do gestor para acompanhar cadastros, contatos e qualificação de afiliados do programa Reproboost."
+  >
+  <link rel="icon" type="image/png" href="./assets/images/reproboost-logo-v3.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="gestor-page">
+  <main class="gestor-page-main">
+    <section class="gestor-login-wrap" id="login-gestor">
+      <div class="gestor-login-card">
+        <a class="brand gestor-brand" href="./index.html">
+          <img
+            class="brand-logo"
+            src="./assets/images/reproboost-logo-v3.png"
+            alt="Programa de Afiliados Reproboost"
+          >
+        </a>
+
+        <p class="section-kicker">Area restrita</p>
+        <h1>Login do gestor</h1>
+        <p class="gestor-login-text">
+          Entre para visualizar, filtrar, qualificar e exportar os cadastros recebidos na pagina de venda.
+        </p>
+
+        <form class="gestor-login-form" id="gestor-login-form">
+          <label>
+            E-mail do gestor
+            <input type="email" name="email" placeholder="gestor@reproboost.com" required>
+          </label>
+          <label>
+            Senha
+            <input type="password" name="senha" placeholder="Digite sua senha" required>
+          </label>
+          <button class="button" type="submit">Entrar na area do gestor</button>
+          <p class="cadastro-feedback gestor-login-feedback" id="gestor-login-feedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="gestor-dashboard-page hidden" id="gestor-dashboard">
+      <div class="container gestor-shell">
+        <div class="gestor-header">
+          <div>
+            <p class="section-kicker">Area do Gestor</p>
+            <h2>Painel de membros e cadastros</h2>
+            <p class="gestor-intro">
+              Todos os afiliados cadastrados aparecem aqui para acompanhamento,
+              organizacao de contato e gestao comercial do programa.
+            </p>
+          </div>
+          <div class="gestor-actions">
+            <button class="button button-secondary" id="exportar-csv" type="button">Exportar cadastros</button>
+            <button class="button button-ghost" id="sair-gestor" type="button">Sair</button>
+          </div>
+        </div>
+
+        <div class="gestor-metrics">
+          <article class="metric-card">
+            <span>Total</span>
+            <strong id="metric-total">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Novos</span>
+            <strong id="metric-novos">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Contatados</span>
+            <strong id="metric-contatados">0</strong>
+          </article>
+          <article class="metric-card">
+            <span>Qualificados</span>
+            <strong id="metric-qualificados">0</strong>
+          </article>
+        </div>
+
+        <div class="gestor-toolbar">
+          <input id="filtro-cadastro" type="search" placeholder="Buscar por nome, fazenda ou WhatsApp">
+          <select id="filtro-status">
+            <option value="todos">Todos os status</option>
+            <option value="novo">Novo</option>
+            <option value="contatado">Contatado</option>
+            <option value="qualificado">Qualificado</option>
+            <option value="fechado">Fechado</option>
+          </select>
+        </div>
+
+        <div class="gestor-table-wrap">
+          <table class="gestor-table">
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Empresa / Fazenda / Central</th>
+                <th>WhatsApp</th>
+                <th>Data</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="cadastros-body">
+              <tr class="empty-row">
+                <td colspan="5">Nenhum cadastro recebido ainda.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="./gestor.js"></script>
+</body>
+</html>
