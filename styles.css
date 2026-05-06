@@ -262,6 +262,15 @@ img {
   text-align: center;
 }
 
+.hero-text-block h2 {
+  margin: 0 0 18px;
+  color: #162347;
+  font-size: clamp(1.1rem, 2vw, 2rem);
+  font-family: "Outfit", sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
 .hero-text-block p {
   margin: 0;
   color: #394355;
@@ -699,6 +708,11 @@ img {
     margin-top: 24px;
     padding: 20px 18px;
     border-radius: 20px;
+  }
+
+  .hero-text-block h2 {
+    margin-bottom: 14px;
+    font-size: 0.98rem;
   }
 
   .hero-text-block p {
